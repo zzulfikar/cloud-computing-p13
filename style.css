@@ -1,0 +1,242 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+    height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    /* Background foto */
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url('foto.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Posisi tengah */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* =========================
+   LOGIN BOX
+========================= */
+.login-box {
+    width: 100%;
+    max-width: 420px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+
+    backdrop-filter: blur(6px);
+
+    animation: fadeIn 0.8s ease;
+}
+
+/* =========================
+   ANIMASI
+========================= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   TITLE
+========================= */
+.login-box h1 {
+    text-align: center;
+
+    margin-bottom: 10px;
+
+    font-size: 48px;
+
+    color: #222;
+}
+
+/* =========================
+   SUBTITLE
+========================= */
+.subtitle {
+    text-align: center;
+
+    color: #555;
+
+    margin-bottom: 30px;
+
+    font-size: 18px;
+}
+
+/* =========================
+   INPUT GROUP
+========================= */
+.input-group {
+    margin-bottom: 22px;
+
+    transition: 0.3s;
+}
+
+/* LABEL */
+.input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #222;
+
+    font-weight: bold;
+
+    font-size: 16px;
+}
+
+/* INPUT */
+.input-group input {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+/* INPUT FOCUS */
+.input-group input:focus {
+    border-color: #2196f3;
+
+    box-shadow: 0 0 10px rgba(33,150,243,0.3);
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn-login {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2196f3;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.btn-login:hover {
+    background: #1976d2;
+
+    transform: translateY(-2px);
+}
+
+/* =========================
+   MESSAGE
+========================= */
+.message {
+    margin-top: 18px;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    display: none;
+
+    font-weight: bold;
+}
+
+/* SUCCESS */
+.success {
+    background: #d4edda;
+
+    color: #155724;
+}
+
+/* ERROR */
+.error {
+    background: #f8d7da;
+
+    color: #721c24;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    margin-top: 25px;
+
+    text-align: center;
+
+    font-size: 16px;
+}
+
+/* LINK */
+.footer a {
+    color: #2196f3;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+/* LINK HOVER */
+.footer a:hover {
+    text-decoration: underline;
+}
