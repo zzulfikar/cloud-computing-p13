@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="login-box">
+
+            <h1>Login</h1>
+
+            <p class="subtitle">
+                Silakan login untuk melanjutkan
+            </p>
+
+            <form id="loginForm">
+
+                <div class="input-group">
+                    <label for="username">Username</label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Masukkan username"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Masukkan password"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="btn-login">
+                    Login
+                </button>
+
+                <div id="message" class="message"></div>
+
+            </form>
+
+            <div class="footer">
+                <p>
+                    Belum punya akun?
+                    <a href="#">Daftar di sini</a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html> 
